@@ -1,0 +1,1 @@
+﻿ConsoleService.WriteInConsole("Hello!");
