@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task1", "Task1\Task1.csproj", "{AEA8C2E3-1BA2-497C-A9EE-23DA6AEF7EE1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task1", "Task1\Task1.csproj", "{AEA8C2E3-1BA2-497C-A9EE-23DA6AEF7EE1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ErrorExeptionsLib", "ErrorExeptionsLib\ErrorExeptionsLib.csproj", "{26D5615E-AD79-476E-BF89-803B6252FDF9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ErrorExeptionsLib", "ErrorExeptionsLib\ErrorExeptionsLib.csproj", "{26D5615E-AD79-476E-BF89-803B6252FDF9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task2", "Task2\Task2.csproj", "{BF7DCCD9-5899-435A-AD01-F19278AA1F18}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{26D5615E-AD79-476E-BF89-803B6252FDF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{26D5615E-AD79-476E-BF89-803B6252FDF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{26D5615E-AD79-476E-BF89-803B6252FDF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF7DCCD9-5899-435A-AD01-F19278AA1F18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF7DCCD9-5899-435A-AD01-F19278AA1F18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF7DCCD9-5899-435A-AD01-F19278AA1F18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF7DCCD9-5899-435A-AD01-F19278AA1F18}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
