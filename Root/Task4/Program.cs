@@ -8,7 +8,13 @@ namespace Task4
     {
         private static void Main()
         {
-            int inputNumber = Convert.ToInt32(Console.ReadLine());
+            dynamic insertedValue = Console.ReadLine();
+            int.TryParse(insertedValue, out int inputNumber);
+            if (inputNumber == null || inputNumber == 0 || inputNumber.GetType() != typeof(int))
+            {
+                Console.WriteLine("Insert is wrong. Please, write the number");
+                return;
+            }
             if (inputNumber > -5)
             {
                 Console.WriteLine("It's warm");

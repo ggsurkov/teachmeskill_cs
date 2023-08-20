@@ -5,7 +5,7 @@
         static string errorMessage = "Insert is wrong. Please, enter the number from 1 to 12";
         public static bool isCorrectIntMonthValue(dynamic value)
         {
-            if (value == null)
+            if (value == null || value == 0)
             {
                 Console.WriteLine(errorMessage);
                 return false;
