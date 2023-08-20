@@ -2,7 +2,7 @@
 using System.Linq.Expressions;
 using System.Xml.Serialization;
 using ErrorExeptionsLib;
-namespace Task1
+namespace Task2
 {
     internal sealed class Program
     {

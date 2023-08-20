@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ErrorExeptionsLib", "ErrorE
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task2", "Task2\Task2.csproj", "{BF7DCCD9-5899-435A-AD01-F19278AA1F18}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task3", "Task3\Task3.csproj", "{38E5AD9A-9FED-4A5A-9B62-46DF70D2C1AE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{BF7DCCD9-5899-435A-AD01-F19278AA1F18}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF7DCCD9-5899-435A-AD01-F19278AA1F18}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BF7DCCD9-5899-435A-AD01-F19278AA1F18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38E5AD9A-9FED-4A5A-9B62-46DF70D2C1AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38E5AD9A-9FED-4A5A-9B62-46DF70D2C1AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38E5AD9A-9FED-4A5A-9B62-46DF70D2C1AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38E5AD9A-9FED-4A5A-9B62-46DF70D2C1AE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

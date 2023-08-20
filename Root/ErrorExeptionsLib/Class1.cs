@@ -2,7 +2,7 @@
 {
     public class ErrorExeptionsService
     {
-        static string errorMessage = "Wrong insert. Please, enter the number from 1 to 12";
+        static string errorMessage = "Insert is wrong. Please, enter the number from 1 to 12";
         public static bool isCorrectIntMonthValue(dynamic value)
         {
             if (value == null)
