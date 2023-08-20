@@ -8,8 +8,9 @@ namespace Task3
     {
         private static void Main()
         {
-            int inputNumber = Convert.ToInt32(Console.ReadLine());
-            if (inputNumber <= 0)
+            dynamic insertedValue = Console.ReadLine();
+            int.TryParse(insertedValue, out int inputNumber);
+            if (inputNumber.GetType() != typeof(int) || inputNumber <= 0)
             {
                 Console.WriteLine("Insert is wrong. Please, write the number above than 0");
                 return;

@@ -8,7 +8,8 @@ namespace Task1
     {
         private static void Main()
         {
-            int inputNumber = Convert.ToInt32(Console.ReadLine());
+            dynamic insertedValue = Console.ReadLine();
+            int.TryParse(insertedValue, out int inputNumber);
             if (ErrorExeptionsLib.ErrorExeptionsService.isCorrectIntMonthValue(inputNumber))
             {
                 switch (inputNumber)
