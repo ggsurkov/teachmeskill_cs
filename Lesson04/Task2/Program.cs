@@ -11,10 +11,10 @@ namespace Solution
             arr1[1] = new int[3] { 3, 4, 35 };
             arr1[2] = new int[4] { 6, 7, 8, 39 };
 
-            Console.WriteLine(findAvarage(arr1));
+            Console.WriteLine(findAverage(arr1));
         }
 
-        public static double findAvarage(int[][] array)
+        public static double findAverage(int[][] array)
         {
             int sum = 0;
             foreach(int[] row in array)
