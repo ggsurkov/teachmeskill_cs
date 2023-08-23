@@ -8,7 +8,7 @@ namespace Task4
     {
         private static void Main()
         {
-            dynamic insertedValue = Console.ReadLine();
+            string insertedValue = Console.ReadLine();
             int.TryParse(insertedValue, out int inputNumber);
             if (inputNumber == null || inputNumber == 0 || inputNumber.GetType() != typeof(int))
             {
@@ -20,16 +20,12 @@ namespace Task4
                 Console.WriteLine("It's warm");
                 return;
             }
-            if (inputNumber <= -5 && inputNumber > -20)
+            if (inputNumber > -20)
             {
                 Console.WriteLine("It's okay");
                 return;
             }
-            if (inputNumber <= -20)
-            {
-                Console.WriteLine("It's cold");
-                return;
-            }
+            Console.WriteLine("It's cold");
         }
 
     }

@@ -10,55 +10,55 @@ namespace Task2
         {
             dynamic insertedValue = Console.ReadLine();
             int.TryParse(insertedValue, out int inputNumber);
-            if (ErrorExeptionsLib.ErrorExeptionsService.isCorrectIntMonthValue(inputNumber))
+            if (ErrorExeptionsLib.ErrorExeptionsService.IsCorrectIntMonthValue(inputNumber))
             {
                 if (inputNumber == 1)
                 {
-                    Console.WriteLine("January");
+                    Console.WriteLine("Winter");
                 } 
                 else if (inputNumber == 2)
                 {
-                    Console.WriteLine("February");
+                    Console.WriteLine("Winter");
                 }
                 else if (inputNumber == 3)
                 {
-                    Console.WriteLine("Marth");
+                    Console.WriteLine("Spring");
                 }
                 else if (inputNumber == 4)
                 {
-                    Console.WriteLine("April");
+                    Console.WriteLine("Spring");
                 }
                 else if (inputNumber == 5)
                 {
-                    Console.WriteLine("May");
+                    Console.WriteLine("Spring");
                 }
                 else if (inputNumber == 6)
                 {
-                    Console.WriteLine("June");
+                    Console.WriteLine("Summer");
                 }
                 else if (inputNumber == 7)
                 {
-                    Console.WriteLine("July");
+                    Console.WriteLine("Summer");
                 }
                 else if (inputNumber == 8)
                 {
-                    Console.WriteLine("August");
+                    Console.WriteLine("Summer");
                 }
                 else if (inputNumber == 9)
                 {
-                    Console.WriteLine("September");
+                    Console.WriteLine("Autumn");
                 }
                 else if (inputNumber == 10)
                 {
-                    Console.WriteLine("October");
+                    Console.WriteLine("Autumn");
                 }
                 else if (inputNumber == 11)
                 {
-                    Console.WriteLine("November");
+                    Console.WriteLine("Autumn");
                 }
                 else if (inputNumber == 12)
                 {
-                    Console.WriteLine("December");
+                    Console.WriteLine("Winter");
                 }
                 else 
                 { 
