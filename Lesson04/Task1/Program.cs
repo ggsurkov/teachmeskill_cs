@@ -8,10 +8,10 @@ namespace Solution
         {
             int[] arr1 = { 3, 5, 1, 9, 15, 11, -17 };
 
-            Console.WriteLine(findHighestNumberFromArray(arr1));
+            Console.WriteLine(FindHighestNumberFromArray(arr1));
         }
 
-        public static int findHighestNumberFromArray(int[] array) 
+        public static int FindHighestNumberFromArray(int[] array) 
         {
             int result = array[0];
             for (int index = 1; index < array.Length; index++)

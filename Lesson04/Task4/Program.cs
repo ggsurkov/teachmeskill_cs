@@ -10,19 +10,19 @@ namespace Calculator
         private static void Main()
         {
             string inner = Console.ReadLine();
-            int res = calc(inner);
+            int res = Calc(inner);
             while (res == 0)
             {
                 Console.WriteLine(errorMessage); ;
                 inner = Console.ReadLine();
-                res = calc(inner);
+                res = Calc(inner);
             }
 
             Console.WriteLine(res.ToString());
 
         }
 
-        private static int calc(string inner)
+        private static int Calc(string inner)
         {
             int result = 0;
 
