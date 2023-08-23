@@ -3,7 +3,7 @@
     public class ErrorExeptionsService
     {
         static string errorMessage = "Insert is wrong. Please, enter the number from 1 to 12";
-        public static bool IsCorrectIntMonthValue(dynamic value)
+        public static bool IsCorrectIntMonthValue(int value)
         {
             if (value == null || value == 0)
             {
