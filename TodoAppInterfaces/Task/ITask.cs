@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TodoAppInterfaces
+namespace TodoAppInterfaces.Task
 {
-    public interface TaskInterface
+    public interface ITask
     {
         string Name { get; }
-        DateTime Deadline { get; }
+        string Deadline { get; }
         TaskStatus Status { get; }
-        TaskStatus Priority { get; }
+        TaskPriority Priority { get; }
 
     }
 

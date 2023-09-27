@@ -1,10 +1,6 @@
 ﻿using CourseWork01.Interfaces;
 using CourseWork01.Services;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using TodoAppInterfaces.Task;
 
 namespace CourseWork01
 {
@@ -12,12 +8,13 @@ namespace CourseWork01
     {
         public readonly ILogger _logger;
         public readonly TodoOptionsService _todoOptionsService;
-        public readonly TodoLineParserService _todoLineParser;
+        public readonly AppModelService _appModelService;
 
         public TodoListApp()
         {
             _todoOptionsService = new TodoOptionsService();
-            _todoLineParser = new TodoLineParserService();
+            _appModelService = new AppModelService();
+            
             Run();
         }
 
@@ -42,36 +39,22 @@ namespace CourseWork01
             switch (firstChar)
             {
                 case "1":
-                    string sort = _todoLineParser.GetSortCommand(line);
-                    string priority = _todoLineParser.GetPriorityCommand(line);
-                    string status = _todoLineParser.GetStatusCommand(line);
-
-                    _todoOptionsService.DisplayTasks(priority, status, sort);
+                    _todoOptionsService.DisplayTasks(line);
                     return true;
                 case "2":
-                    string name = _todoLineParser.GetSecondCommand(line);
-                    string deadline = _todoLineParser.GetThirdCommand(line);
-
-                    _todoOptionsService.ChangeDeadlineByName(name, deadline);
+                    _todoOptionsService.ChangeDeadlineByName();
                     return true;
                 case "3":
-                    string taskName = _todoLineParser.GetSecondCommand(line);
-                    string taskStatus = _todoLineParser.GetThirdCommand(line);
-
-                    _todoOptionsService.ChangeStatusByName(taskName, taskStatus);
+                    _todoOptionsService.ChangeStatusByName();
                     return true;
                 case "4":
-                    _todoOptionsService.AddNewTask();
+                    TaskModel newTask = _todoOptionsService.CreateNewTask();
+                    _appModelService.AddTaskInList(newTask);
                     return true;
                 case "5":
-                    string taskNameForDeleting = _todoLineParser.GetSecondCommand(line);
-
-                    _todoOptionsService.DeleteTaskByName(taskNameForDeleting);
+                    _todoOptionsService.DeleteTaskByName();
                     return true;
                 case "6":
-                    _todoOptionsService.ShowHelp();
-                    return true;
-                case "7":
                     return false;
                 default:
                     return true;
@@ -86,8 +69,7 @@ namespace CourseWork01
             Console.WriteLine("3) Change tasks status by Name");
             Console.WriteLine("4) To add new task");
             Console.WriteLine("5) To remove task by Name");
-            Console.WriteLine("6) Help");
-            Console.WriteLine("7) Exit");
+            Console.WriteLine("6) Exit");
             Console.Write("\r\nSelect an option: ");
         }
     }

@@ -5,8 +5,6 @@ VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CourseWork01", "CourseWork01.csproj", "{2E832BE3-7446-4966-98A1-03F17DB01AE8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TodoAppInterfaces", "..\TodoAppInterfaces\TodoAppInterfaces.csproj", "{4616A612-9C8E-4886-AE31-365306DF30DD}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{2E832BE3-7446-4966-98A1-03F17DB01AE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2E832BE3-7446-4966-98A1-03F17DB01AE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2E832BE3-7446-4966-98A1-03F17DB01AE8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4616A612-9C8E-4886-AE31-365306DF30DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4616A612-9C8E-4886-AE31-365306DF30DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4616A612-9C8E-4886-AE31-365306DF30DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4616A612-9C8E-4886-AE31-365306DF30DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
